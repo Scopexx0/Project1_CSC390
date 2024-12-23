@@ -1,0 +1,273 @@
+/*  Jeronimo Augurusa Franco
+    25/09/2024
+    CSC 390
+    This is a shop style website (fictional) that includes a main page showing a short view of the brand, and then the respectives html pages with showing the complete catalog, about the shop, the contact, and the cart*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E7DED5; /* Light background color */
+    color: #333; /* Darker text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #E7DED5;
+    width: 100%;
+    z-index: 100;
+}
+
+.about-us {
+    text-align: center;
+    margin: 100px 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-us p {
+    padding-top: 5px;
+}
+
+.about-us iframe {
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Title including image */
+.title {
+    height: 60vh;
+    background-image: url('images/crochet.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-products {
+    text-align: center;
+    padding: 50px;
+    background-color: #E7DED5;
+}
+
+.featured-products h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.title-content h1 {
+    font-size: 48px;
+    color: beige;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #E7DED5;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.product img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    font-size: 20px;
+    color: #3c2f2f;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #3c2f2f;
+}
+
+.view-all {
+    margin-top: 40px;
+}
+
+button {
+    background-color: #3c2f2f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #E7DED5;
+    background-color: #333;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+.products h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product-table {
+    width: 70%;
+    margin: 20px 45px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd ;
+    padding: 8px;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.product-table img {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.product-table button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.product-table button:hover {
+    background-color: #5a3c3c;
+}
+  
+.product-table input[type="number"] {
+    width: 50px;
+}
+
+.contact-list{
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.contact-list h2 {
+    padding-bottom: 30px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #ddd;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.contact-list li {
+    color: #333;
+    padding-top: 30px;
+}
+
+.cart-container {
+    width: 50%;
+    margin: 100px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 10px;
+}
+
+ol li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.item-quantity, .item-price {
+    text-align: right;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+/* Not an actual button yet */
+.checkout-btn {
+    display: block;
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
